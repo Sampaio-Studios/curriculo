@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weminen Veras — Portfólio</title>
+
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Vídeos responsivos */
+        .video-container,
+        .prototype-image {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            background: #111;
+            border-radius: 12px;
+        }
+
+        .video-container iframe,
+        .prototype-image iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Imagem responsiva do Ensino Médio */
+        .education-image {
+            width: 100%;
+            min-width: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .education-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: inherit;
+        }
+
+        /* Imagem do bootcamp */
+        .bootcamp-visual img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* Layout adaptável em telas pequenas */
+        @media (max-width: 768px) {
+            .panel-content,
+            .panel-content.reverse {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 28px;
+            }
+
+            .education-image,
+            .bootcamp-visual,
+            .prototype-image,
+            .video-container {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .education-image img {
+                aspect-ratio: 16 / 10;
+            }
+
+            .topbar {
+                gap: 12px;
+            }
+
+            .topbar-right {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BARRA DE PROGRESSO -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- MENU -->
+    <header class="topbar">
+        <div class="logo">Weminen Veras</div>
+
+        <div class="topbar-right">
+            <span>PORTFÓLIO</span>
+            <span>2026</span>
+        </div>
+    </header>
+
+    <a href="inicio.html" class="voltar-inicio">
+        ← ESCOLHER OUTRA VERSÃO
+    </a>
+
+    <main>
+
+        <!-- CAPA -->
+        <section class="panel hero-panel reveal">
+            <div class="hero-content">
+
+                <p class="eyebrow">PORTFÓLIO PESSOAL / 2026</p>
+
+                <h1>
+                    OLÁ, EU SOU<br>
+                    <span>Weminen Veras.</span>
+                </h1>
+
+                <p class="hero-description">
+                    <strong>Desenvolvendo de maneira criativa e inovadora.</strong>
+                </p>
+
+                <div class="scroll-indicator">SCROLL ↓</div>
+            </div>
+        </section>
+
+        <!-- 01 — QUEM SOU EU -->
+        <section class="panel reveal">
+            <div class="panel-number">01</div>
+
+            <div class="panel-content">
+                <div class="panel-text">
+
+                    <p class="eyebrow">SOBRE MIM</p>
+
+                    <h2>
+                        QUEM<br>
+                        <span>SOU EU?</span>
+                    </h2>
+
+                    <p>
+                        Meu nome é <strong>Weminen Veras,</strong> tenho 21 anos e moro no Ceará. 
+                    
+                    </p>
+
+                    <p>
+                        Atualmente, dedico grande parte do meu tempo à criação de sites e jogos.  <br>
+                        Tenho vários projetos em desenvolvimento e disponibilizei um deles mais abaixo. <br>
+                        
+                    </p>
+
+                    <p>
+                        Também crio conteúdo para a internet, faço lives jogando e produzo vídeos de entretenimento, Shorts e Reels, sempre voltados para o humor. <br>
+                        <strong>Afinal, a vida sem risos é uma vida triste!</strong>
+                    </p>
+                </div>
+
+                <div class="photo-container">
+                    <div class="photo-background"></div>
+
+                    <img
+                        src="assets/foto-quem-sou.jpeg"
+                        alt="Foto de Weminen Veras"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 — IA VS PROGRAMADOR -->
+        <section class="panel reveal">
+            <div class="panel-number">02</div>
+
+            <div class="panel-content">
+
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/vWOPnEX2gpE"
+                        title="IA vs Programador"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="panel-text">
+
+                    <p class="eyebrow">TECNOLOGIA</p>
+
+                    <h2>
+                        IA VS<br>
+                        <span>PROGRAMADOR</span>
+                    </h2>
+
+                    <p>
+                        A inteligência artificial está transformando a maneira como desenvolvemos software.
+                    </p>
+
+                    <p>
+                       Mas será que ela realmente vai substituir os programadores?
+                    </p>
+                    Preparei um vídeo abordando esse tema de forma introdutória, explorando a relação entre a IA e os programadores iniciantes.
+                    <p>
+                    
+
+                    <div class="quote">
+                        "A GUERRA DA <strong>IA</strong> VS <strong> PROGRAMADORES JÚNIORES</strong>"
+                    </div>
+
+                    <a
+                        href="https://youtu.be/vWOPnEX2gpE"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        ASSISTIR NO YOUTUBE →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 — FULL STACK / SISTEMA SOLAR -->
+        <section class="panel reveal">
+            <div class="panel-number">03</div>
+
+            <div class="panel-content reverse">
+                <div class="panel-text">
+
+                    <p class="eyebrow">DESENVOLVIMENTO</p>
+
+                    <h2>
+                        FULL<br>
+                        <span>STACK</span>
+                    </h2>
+
+                    <p>
+                        Desenvolvimento Full Stack é uma das áreas
+                        que mais me interessa.
+                    </p>
+
+                    <p>
+                        Gosto da possibilidade de trabalhar desde a
+                        interface que o usuário vê até a lógica que
+                        acontece por trás dela.
+                    </p>
+
+                <div class="tech-list">
+                    <span data-full="HyperText Markup Language">HTML</span>
+                    <span data-full="Cascading Style Sheets">CSS</span>
+                    <span data-full="linguagem de programação de alto nível, interpretada e multiparadigmática">JAVASCRIPT</span>
+                    <span data-full="Desenvolvimento Front-end">FRONT-END</span>
+                    <span data-full="Desenvolvimento Back-end">BACK-END</span>
+                    <span data-full="Banco de Dados">DATABASE</span>
+                    <span data-full="Git - Sistema de Controle de Versão">GIT</span>
+                    <span data-full="Three.js - Biblioteca JavaScript para gráficos 3D">THREE.JS</span>
+                </div>
+            </div>
+
+            <div class="project-box">
+
+                <p class="project-label">PROJETO EM DESTAQUE</p>
+
+                <div class="project-preview">
+                <iframe
+                    src="https://sampaio-studios.github.io/sampaio-studios/"
+                    title="Prévia do projeto Sistema Solar"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+    <h3>
+        SISTEMA<br>
+        SOLAR
+    </h3>
+
+    <p>
+        Um projeto desenvolvido para colocar em prática
+        conceitos de programação, interface e lógica.
+    </p>
+
+    <a
+        href="https://sampaio-studios.github.io/sampaio-studios/"
+        class="project-link"
+        target="_blank"
+        rel="noopener noreferrer">
+        VER PROJETO COMPLETO →
+    </a>
+
+    </div>
+            </div>
+        </section>
+
+        <!-- 04 — ENSINO MÉDIO -->
+        <section class="panel reveal">
+            <div class="panel-number">04</div>
+
+            <div class="panel-content">
+
+                <div class="education-image">
+                    <img
+                        src="assets/foto-escola.jpg"
+                        alt="Foto relacionada ao meu Ensino Médio"
+                        loading="lazy">
+                </div>
+
+                <div class="panel-text">
+
+                    <p class="eyebrow">FORMAÇÃO</p>
+
+                    <h2>
+                        ENSINO<br>
+                        <span>MÉDIO</span>
+                    </h2>
+
+                    <p>
+                        Minha formação escolar faz parte importante
+                        da minha trajetória.
+                    </p>
+
+                   <div class="education-item">
+    <span class="education-year">2020-2022</span>
+
+     <div>
+        <h3>
+            <a class="education-link"
+               href="https://eeepdjmm.com.br/infor/"
+               target="_blank"
+               rel="noopener noreferrer">
+                <span>ENSINO TÉCNICO EM INFORMÁTICA</span>
+                <span class="visit-badge">VISITAR ↗</span>
+            </a>
+        </h3>
+
+        <p>
+            <a class="education-link"
+               href="https://eeepdjmm.com.br/"
+               target="_blank"
+               rel="noopener noreferrer">
+                <span>Escola Estadual de Educação Profissional
+                Deputado José Maria Melo</span>
+                <span class="visit-badge">VISITAR ↗</span>
+            </a>
+        </p>
+    </div>
+            </div>
+
+                    <p>
+                        <strong>Se eu soubesse que faria tanta falta, teria aproveitado mais... :(</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 — PROGRAMAÇÃO -->
+        <section class="panel reveal">
+            <div class="panel-number">05</div>
+
+            <div class="panel-content reverse">
+                <div class="panel-text">
+
+                    <p class="eyebrow">HABILIDADES</p>
+
+                    <h2>
+                        O QUE<br>
+                        <span>EU SEI FAZER</span>
+                    </h2>
+
+                    <p>
+                        Meu foco está no desenvolvimento de projetos,
+                        na programação e na busca por soluções criativas
+                        usando tecnologia.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>PROGRAMAÇÃO</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JAVASCRIPT</span>
+                        <span>INTELIGÊNCIA ARTIFICIAL</span>
+                        <span>GIT</span>
+                    </div>
+                </div>
+
+                <div class="skill-highlight">
+    <p class="skill-label">PRINCÍPIO</p>
+
+    <h3>CRIATIVIDADE</h3>
+
+    <div class="skill-line"></div>
+
+    <p class="skill-concept">
+        Ideias + Código + Tecnologia
+    </p>
+
+    <blockquote class="author-quote">
+        “Ideias revolucionárias foram más ideias
+        que não foram vistas com um olhar negativo.”
+    </blockquote>
+
+    <p class="quote-author">— Essa é a forma como trabalho e desenvolvo. Frase autoral minha.</p>
+</div>
+            </div>
+        </section>
+
+        <!-- 06 — BOOTCAMP -->
+        <section class="panel reveal">
+            <div class="panel-number">06</div>
+
+            <div class="panel-content">
+
+                <div class="bootcamp-visual">
+                    <img
+                        src="/assets/foto-bootcamp.png"
+                        alt="Foto do bootcamp"
+                        loading="lazy">
+                </div>
+
+                <div class="panel-text">
+
+                    <p class="eyebrow">EXPERIÊNCIA</p>
+
+                    <h2>
+                        BOOT<br>
+                        <span>CAMP</span>
+                    </h2>
+
+                    <p>
+                        Uma experiência importante para aprofundar
+                        meus conhecimentos e entrar em contato com
+                        novos conceitos de programação. <br>
+                        <strong>cursos complementares:</strong>
+                        <ul>
+                            <li>Tech English</li>
+                            <li>Gestão de Relacionamento</li>
+                            <li>Qualificação Profissional</li>
+                        </ul>
+                    </p>
+
+                    <div class="stats">
+                        <div>
+                            <strong>01</strong>
+                            <span>BOOTCAMP</span>
+                        </div>
+
+                        <div>
+                            <strong>∞</strong>
+                            <span>APRENDIZADO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 07 — PROTÓTIPOS -->
+        <section class="panel reveal">
+            <div class="panel-number">07</div>
+
+            <div class="panel-content reverse">
+
+                <div class="panel-text">
+
+                    <p class="eyebrow">PROJETO EM DESENVOLVIMENTO</p>
+
+                    <h2>
+                        MEUS<br>
+                        <span>PROTÓTIPOS</span>
+                    </h2>
+
+                    <p>
+                      Aqui apresento alguns dos protótipos e das ideias que estou desenvolvendo.
+                    </p>
+
+                    <p>
+                        <strong>CORRIDA DA VIDA</strong> é um jogo de corrida multiplayer online que está em desenvolvimento, 
+                        com foco na competitividade e em mecânicas de combate que variam de acordo com cada 
+                        personagem.
+                    </p>
+
+                    <a
+                        href="https://youtu.be/Pp9RPKqcXSA"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        ASSISTIR AO VÍDEO NO YOUTUBE ↗
+                    </a>
+                </div>
+
+                <div class="prototype-image">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/Pp9RPKqcXSA"
+                        title="CORRIDA DA VIDA — Vídeo do protótipo"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+
+<!-- 06 — MINHAS SKILLS -->
+<section class="panel reveal">
+    <div class="panel-number">06</div>
+
+    <div class="skills-layout">
+
+        <!-- HABILIDADES FORTES — ESQUERDA -->
+        <div class="skills-column skills-strong">
+            <p class="eyebrow">MEUS PONTOS FORTES</p>
+
+            <h3>MINHAS<br><span>FORÇAS</span></h3>
+
+            <div class="skill-item">
+                <span>CRIATIVIDADE</span>
+                <div class="skill-line">
+                    <span style="width: 90%"></span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>INOVAÇÃO</span>
+                <div class="skill-line">
+                    <span style="width: 85%"></span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>COMUNICAÇÃO</span>
+                <div class="skill-line">
+                    <span style="width: 80%"></span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>EDIÇÃO DE VÍDEO</span>
+                <div class="skill-line">
+                    <span style="width: 75%"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOTO CENTRAL -->
+        <div class="skills-center">
+            <div class="skills-photo">
+                <img
+                    src="/assets/skills.png"
+                    alt="Foto representando minhas habilidades"
+                    loading="lazy">
+            </div>
+
+            <p class="skills-caption">CRIAR • APRENDER • EVOLUIR</p>
+        </div>
+
+        <!-- HABILIDADES EM DESENVOLVIMENTO — DIREITA -->
+        <div class="skills-column skills-learning">
+            <p class="eyebrow">EM DESENVOLVIMENTO</p>
+
+            <h3>SEMPRE<br><span>EVOLUINDO</span></h3>
+
+            <div class="skill-item">
+                <span>MANIPULAÇÃO DE IA</span>
+                <div class="skill-line">
+                    <span style="width: 65%"></span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>INGLÊS</span>
+                <div class="skill-line">
+                    <span style="width: 60%"></span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>EDIÇÃO DE FOTO</span>
+                <div class="skill-line">
+                    <span style="width: 60%"></span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>EDIÇÃO DE ÁUDIO</span>
+                <div class="skill-line">
+                    <span style="width: 55%"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</section>
+<section>
+<!-- PAINEL 08 — MARKETING DIGITAL -->
+<section class="panel reveal">
+    <div class="panel-number">09</div>
+
+    <div class="panel-content reverse">
+
+        <!-- TEXTO À ESQUERDA -->
+        <div class="panel-text marketing-text">
+
+            <p class="eyebrow">MARKETING DIGITAL • YOUTUBE</p>
+
+            <h2>
+                MEU<br>
+                <span>CANAL</span>
+            </h2>
+
+            <p>
+                Meu canal no YouTube é um espaço onde compartilho 
+                com o mundo minha personalidade, meus interesses e meu jeito de ver a vida.
+            </p>
+
+            <p>
+                Acompanhar o desempenho dos vídeos me ajuda a entender o alcance das 
+                publicações, o interesse do público e as oportunidades de crescimento do canal.
+            </p>
+
+            <div class="marketing-skills">
+                <span>CRIAÇÃO DE CONTEÚDO</span>
+                <span>ENGAJAMENTO</span>
+                <span>ESTRATÉGIA DIGITAL</span>
+                <span>ANÁLISE DE DESEMPENHO</span>
+            </div>
+
+            
+
+        </div>
+
+        <!-- DUAS FOTOS À DIREITA -->
+        <div class="marketing-visual">
+
+            <button
+                type="button"
+                class="zoomable"
+                data-image="/assets/markenting1.png"
+                data-alt="Imagem do canal no YouTube"
+                aria-label="Ampliar primeira imagem">
+
+                <img
+                    src="/assets/markenting1.png"
+                    alt="Imagem do canal no YouTube"
+                    loading="lazy">
+
+                <span class="zoom-hint">AMPLIAR ↗</span>
+            </button>
+
+            <button
+                type="button"
+                class="zoomable"
+                data-image="/assets/markenting2.png"
+                data-alt="Estatísticas de desempenho do canal"
+                aria-label="Ampliar estatísticas do YouTube">
+
+                <img
+                    src="/assets/markenting2.png"
+                    alt="Estatísticas de desempenho do canal"
+                    loading="lazy">
+
+                <span class="zoom-hint">VER ESTATÍSTICAS ↗</span>
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- JANELA DE ZOOM -->
+<div
+    class="zoom-modal"
+    id="zoomModal"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Imagem ampliada">
+
+    <button
+        type="button"
+        class="zoom-close"
+        id="zoomClose"
+        aria-label="Fechar imagem">
+        &times;
+    </button>
+
+    <img id="zoomImage" src="" alt="">
+</div>
+             <!-- <a
+                href="COLOQUE_AQUI_O_LINK_DO_SEU_CANAL"
+                class="marketing-link"
+                target="_blank"
+                rel="noopener noreferrer">
+                CONHEÇA MEU CANAL ↗
+            </a>
+            -->
+        </div>
+
+       
+    </div>
+</section>
+</section>
+
+        </section>
+        <!-- 08 — PROJETOS -->
+        <!--<section class="panel reveal">
+            <div class="panel-number">08</div>
+
+            <div class="panel-content reverse">
+
+                <div class="panel-text">
+
+                    <p class="eyebrow">MEU TRABALHO</p>
+
+                    <h2>
+                        MEUS<br>
+                        <span>PROJETOS</span>
+                    </h2>
+
+                    <p>
+                        Alguns projetos que representam aquilo que venho
+                        aprendendo e construindo.
+                    </p>
+                </div>
+
+                <div class="projects-list">
+
+                    <a
+                        href="https://sampaio-studios.github.io/sampaio-studios/"
+                        class="project"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span>01</span>
+                        <strong>SISTEMA SOLAR</strong>
+                        <small>DESENVOLVIMENTO WEB</small>
+                        <b>→</b>
+                    </a>
+
+                    <!--<a href="#" class="project">
+                        <span>02</span>
+                        <strong>PROJETO 02</strong>
+                        <small>FULL STACK</small>
+                        <b>→</b>
+                    </a>
+
+                    <a href="#" class="project">
+                        <span>03</span>
+                        <strong>PROJETO 03</strong>
+                        <small>EM DESENVOLVIMENTO</small>
+                        <b>→</b>
+                    </a>
+                
+
+                </div>
+            </div>
+        </section> -->
+
+        <!-- FINAL / CONTATO -->
+        <section class="panel final-panel reveal">
+            <div class="final-content">
+                
+
+                <p class="eyebrow">SURGIU ALGUMA DÚVIDA OU CURIOSIDADE?</p>
+
+                <h2>
+                    VAMOS<br>
+                    <span>CONVERSAR!</span>
+                </h2>
+
+                <p>
+                    Obrigado por chegar até aqui.
+                    AGURADO VOCÊ!!!
+                </p>
+
+                <div class="social-links">
+                    <a href="https://github.com/Sampaio-Studios" target="_blank" rel="noopener noreferrer">
+                        GITHUB
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/weminen-veras" target="_blank" rel="noopener noreferrer">
+                        LINKEDIN
+                    </a>
+
+                    <a href="https://www.instagram.com/weminen.veras/" target="_blank" rel="noopener noreferrer">
+                        INSTAGRAM
+                    </a>
+
+                    <a href="mailto:veras.ribeiro10@gmail.com">EMAIL</a>
+                </div>
+
+                <a href="inicio.html" class="back-button">
+                    ← VOLTAR AO INÍCIO
+                </a>
+            </div>
+        </section>
+
+    </main>
+<!-- JANELA DE ZOOM -->
+<div class="zoom-modal" id="zoomModal" aria-hidden="true">
+    <button class="zoom-close" id="zoomClose" aria-label="Fechar">
+        &times;
+    </button>
+
+    <div class="zoom-content" id="zoomContent"></div>
+</div>
+    <!-- VOLTAR AO TOPO -->
+    <button
+        id="topButton"
+        class="top-button"
+        aria-label="Voltar ao topo">
+        ↑
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

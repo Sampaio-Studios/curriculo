@@ -1,0 +1,419 @@
+
+/* CURRÍCULO — Weminen Veras */
+:root {
+  --fundo: #f7f7f5;
+  --texto: #202020;
+  --texto-suave: #555;
+  --linha: #343434;
+  --detalhe: #8a2929;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px 15px;
+  background: #dedede;
+  color: var(--texto);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  color: var(--detalhe);
+  text-decoration: underline;
+}
+
+.curriculo {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 38px 35px 24px;
+  background: var(--fundo);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 10%);
+}
+
+.cabecalho {
+  display: grid;
+  grid-template-columns: 29% minmax(0, 1fr);
+  gap: 30px;
+  align-items: center;
+  padding-bottom: 26px;
+}
+
+.foto-container {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #e5e5e5;
+}
+
+.foto-perfil {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.identidade {
+  min-width: 0;
+}
+
+.sobretitulo {
+  margin-bottom: 9px;
+  color: var(--detalhe);
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.identidade h1 {
+  margin-bottom: 15px;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(32px, 5vw, 45px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: 1px;
+  overflow-wrap: anywhere;
+}
+
+.linha-cabecalho {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 11px;
+  background: var(--linha);
+}
+
+.cargo {
+  margin-bottom: 13px;
+  color: var(--texto-suave);
+  font-size: 13px;
+}
+
+.dados-pessoais {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style: none;
+}
+
+.dados-pessoais li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.icone {
+  flex: 0 0 17px;
+  color: var(--detalhe);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.linha-principal {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 25px;
+  background: var(--linha);
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 31% minmax(0, 1fr);
+  gap: 29px;
+  align-items: start;
+}
+
+.lateral {
+  padding-right: 23px;
+  border-right: 1px solid #999;
+}
+
+.principal {
+  min-width: 0;
+}
+
+.secao {
+  margin-bottom: 24px;
+  break-inside: avoid;
+}
+
+.secao h2 {
+  margin-bottom: 12px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--linha);
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.secao p {
+  margin-bottom: 5px;
+}
+
+.secao h3 {
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.lista,
+.lista-habilidades {
+  padding-left: 18px;
+}
+
+.lista > li {
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+.lista-habilidades li {
+  margin-bottom: 4px;
+  padding-left: 2px;
+}
+
+.observacao {
+  margin-top: 8px;
+  color: var(--texto-suave);
+  font-size: 10px;
+  font-style: italic;
+}
+
+.item-formacao,
+.item-projeto {
+  margin-bottom: 14px;
+  break-inside: avoid;
+}
+
+.item-formacao p,
+.item-projeto p {
+  margin-bottom: 4px;
+}
+
+.periodo {
+  color: var(--texto-suave);
+  font-size: 11px;
+}
+
+.item-projeto a {
+  display: inline-block;
+  margin-top: 3px;
+  color: var(--detalhe);
+  font-weight: 700;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  padding-top: 14px;
+  border-top: 1px solid #999;
+}
+
+.botao-imprimir {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 3px;
+  background: var(--detalhe);
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.botao-imprimir:hover {
+  background: #681d1d;
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    font-size: 11px;
+  }
+
+  .curriculo {
+    padding: 22px 18px;
+    box-shadow: none;
+  }
+
+  .cabecalho {
+    grid-template-columns: 32% minmax(0, 1fr);
+    gap: 16px;
+    padding-bottom: 20px;
+  }
+
+  .sobretitulo {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .identidade h1 {
+    margin-bottom: 10px;
+    font-size: clamp(25px, 7vw, 34px);
+  }
+
+  .cargo {
+    font-size: 11px;
+  }
+
+  .dados-pessoais {
+    gap: 6px;
+  }
+
+  .dados-pessoais li {
+    gap: 6px;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .lateral {
+    padding-right: 0;
+    padding-bottom: 3px;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+  }
+
+  .secao {
+    margin-bottom: 21px;
+  }
+
+  .secao h2 {
+    font-size: 16px;
+  }
+}
+
+/* IMPRESSÃO EM A4 / PDF */
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+@media print {
+  body {
+    padding: 0;
+    background: #fff;
+    font-size: 9px;
+    line-height: 1.45;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .curriculo {
+    width: 100%;
+    max-width: none;
+    padding: 5mm 4mm;
+    box-shadow: none;
+  }
+
+  .cabecalho {
+    grid-template-columns: 25% minmax(0, 1fr);
+    gap: 7mm;
+    padding-bottom: 5mm;
+  }
+
+  .foto-container {
+    max-height: 47mm;
+  }
+
+  .identidade h1 {
+    font-size: 30px;
+  }
+
+  .dados-pessoais {
+    gap: 3px;
+  }
+
+  .linha-principal {
+    margin-bottom: 5mm;
+  }
+
+  .conteudo {
+    grid-template-columns: 30% minmax(0, 1fr);
+    gap: 6mm;
+  }
+
+  .lateral {
+    padding-right: 4mm;
+  }
+
+  .secao {
+    margin-bottom: 5mm;
+  }
+
+  .secao h2 {
+    margin-bottom: 2mm;
+    padding-bottom: 1mm;
+    font-size: 13px;
+  }
+
+  .secao h3 {
+    font-size: 9px;
+  }
+
+  .lista > li {
+    margin-bottom: 2mm;
+  }
+
+  .item-formacao,
+  .item-projeto {
+    margin-bottom: 3mm;
+  }
+
+  .rodape {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+.btn-voltar {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #1f2937;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #374151;
+    transform: translateX(-3px);
+}
+
+.btn-voltar:focus-visible {
+    outline: 3px solid #60a5fa;
+    outline-offset: 3px;
+}
+
+@media print {
+    .btn-voltar {
+        display: none;
+    }
+}

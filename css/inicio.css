@@ -1,0 +1,594 @@
+
+/* ========================================
+   RESET E CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto: #111111;
+    --branco: #f5f3f0;
+    --vermelho: #f12630;
+    --cinza: #929292;
+    --linha: #383838;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--preto);
+    color: var(--branco);
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ========================================
+   PÁGINA PRINCIPAL
+======================================== */
+
+.pagina-inicial {
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 28px 5% 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.topo {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.marca {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.data {
+    color: var(--cinza);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-align: right;
+}
+
+/* ========================================
+   ÁREA HERO
+======================================== */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    flex: 1;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* TEXTO GIGANTE DE FUNDO */
+
+.titulo-fundo {
+    position: absolute;
+    z-index: -1;
+    top: 65px;
+    left: -2%;
+    width: 104%;
+    overflow: hidden;
+
+    font-family: "Anton", sans-serif;
+    font-size: clamp(90px, 17vw, 230px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -2px;
+    white-space: nowrap;
+    color: var(--vermelho);
+
+    pointer-events: none;
+    user-select: none;
+}
+
+/* CÍRCULO VERMELHO ATRÁS DA FOTO */
+
+.circulo {
+    position: absolute;
+    z-index: -1;
+    right: 4%;
+    bottom: 7%;
+
+    width: clamp(220px, 30vw, 390px);
+    aspect-ratio: 1;
+
+    background: var(--vermelho);
+    border-radius: 50%;
+}
+
+/* ========================================
+   TEXTO PRINCIPAL
+======================================== */
+
+.hero-conteudo {
+    position: relative;
+    z-index: 3;
+
+    width: 58%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.etiqueta {
+    margin-bottom: 22px;
+
+    color: var(--cinza);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    position: relative;
+    margin-bottom: 24px;
+
+    font-family: "Anton", sans-serif;
+    font-size: clamp(58px, 7.5vw, 105px);
+    font-weight: 400;
+    line-height: 1.03;
+    letter-spacing: 0;
+
+    overflow-wrap: normal;
+}
+
+.hero h1 span {
+    color: var(--vermelho);
+}
+
+.descricao {
+    max-width: 370px;
+    margin-bottom: 30px;
+
+    color: #bdbdbd;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+/* ========================================
+   BOTÕES DE NAVEGAÇÃO
+======================================== */
+
+.botoes {
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 340px;
+}
+
+.botao {
+    width: 100%;
+    min-height: 58px;
+    padding: 12px 17px;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    border: 1px solid #555555;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.botao > span:first-child {
+    flex-shrink: 0;
+    color: var(--cinza);
+    font-size: 10px;
+}
+
+.botao .seta {
+    flex-shrink: 0;
+    margin-left: auto;
+    font-size: 19px;
+}
+
+.botao-principal {
+    color: var(--preto);
+    background: var(--branco);
+    border-color: var(--branco);
+}
+
+.botao-principal > span:first-child {
+    color: #555555;
+}
+
+.botao-principal:hover {
+    color: white;
+    background: var(--vermelho);
+    border-color: var(--vermelho);
+    transform: translateX(5px);
+}
+
+.botao-secundario {
+    color: var(--branco);
+    background: transparent;
+}
+
+.botao-secundario:hover {
+    color: white;
+    background: var(--vermelho);
+    border-color: var(--vermelho);
+    transform: translateX(5px);
+}
+
+/* ========================================
+   FOTO DE PERFIL
+======================================== */
+
+.imagem-container {
+    position: absolute;
+    z-index: 2;
+    right: 4%;
+    bottom: 0;
+
+    width: 36%;
+    height: 72%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    pointer-events: none;
+}
+
+.imagem-perfil {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center bottom;
+
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+}
+
+.imagem-container:hover .imagem-perfil {
+    filter: grayscale(0%);
+}
+
+.imagem-legenda {
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+}
+
+/* TEXTO VERTICAL LATERAL */
+
+.texto-vertical {
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+
+    color: #777777;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.rodape {
+    position: relative;
+    z-index: 5;
+
+    min-height: 52px;
+    padding-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    border-top: 1px solid var(--linha);
+
+    color: #888888;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.rodape a {
+    color: var(--branco);
+    transition: color 0.2s ease;
+}
+
+.rodape a:hover {
+    color: var(--vermelho);
+}
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .pagina-inicial {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .hero {
+        min-height: 750px;
+    }
+
+    .titulo-fundo {
+        top: 100px;
+        font-size: 19vw;
+    }
+
+    .hero-conteudo {
+        width: 65%;
+        padding-top: 160px;
+    }
+
+    .hero h1 {
+        font-size: clamp(55px, 8vw, 78px);
+    }
+
+    .descricao {
+        max-width: 330px;
+    }
+
+    .imagem-container {
+        right: 0;
+        width: 38%;
+        height: 50%;
+    }
+
+    .circulo {
+        right: -20px;
+        bottom: 6%;
+        width: 280px;
+    }
+
+    .texto-vertical {
+        display: none;
+    }
+}
+
+/* ========================================
+   CELULARES
+======================================== */
+
+@media (max-width: 600px) {
+
+    .pagina-inicial {
+        min-height: 100vh;
+        padding: 22px 20px 15px;
+    }
+
+    .topo {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .marca {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .data {
+        max-width: 150px;
+        font-size: 8px;
+        line-height: 1.5;
+    }
+
+    .hero {
+        display: block;
+        min-height: 850px;
+        overflow: hidden;
+    }
+
+    .titulo-fundo {
+        top: 65px;
+        left: -2%;
+        width: 104%;
+        font-size: 20vw;
+        letter-spacing: -1px;
+    }
+
+    .hero-conteudo {
+        width: 100%;
+        padding-top: 155px;
+        padding-bottom: 330px;
+    }
+
+    .etiqueta {
+        max-width: 300px;
+        margin-bottom: 18px;
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .hero h1 {
+        margin-bottom: 20px;
+        font-size: clamp(53px, 13vw, 76px);
+        line-height: 1.04;
+    }
+
+    .descricao {
+        max-width: 100%;
+        margin-bottom: 22px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .botoes {
+        width: 100%;
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .botao {
+        min-height: 52px;
+        padding: 11px 13px;
+        font-size: 11px;
+    }
+
+    .imagem-container {
+        right: 0;
+        bottom: 0;
+        width: 65%;
+        height: 290px;
+    }
+
+    .circulo {
+        right: -15px;
+        bottom: 15px;
+        width: 220px;
+    }
+
+    .imagem-legenda {
+        bottom: 10px;
+        font-size: 8px;
+    }
+
+    .texto-vertical {
+        display: none;
+    }
+
+    .rodape {
+        flex-wrap: wrap;
+        gap: 10px;
+        min-height: 45px;
+        padding-top: 12px;
+        font-size: 8px;
+    }
+
+    .rodape span:nth-child(2) {
+        display: none;
+    }
+}
+
+/* ========================================
+   TELAS MUITO PEQUENAS
+======================================== */
+
+@media (max-width: 360px) {
+
+    .pagina-inicial {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .hero {
+        min-height: 820px;
+    }
+
+    .hero h1 {
+        font-size: 51px;
+    }
+
+    .titulo-fundo {
+        font-size: 19vw;
+    }
+
+    .hero-conteudo {
+        padding-bottom: 300px;
+    }
+
+    .imagem-container {
+        width: 68%;
+        height: 255px;
+    }
+
+    .circulo {
+        width: 190px;
+    }
+
+    .rodape {
+        font-size: 7px;
+    }
+}
+
+/* ========================================
+   ACESSIBILIDADE
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* ========================================
+   IMPRESSÃO
+======================================== */
+
+@media print {
+
+    body {
+        background: var(--preto);
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .pagina-inicial {
+        min-height: 100vh;
+    }
+
+    .rodape {
+        border-color: #555555;
+    }
+}
